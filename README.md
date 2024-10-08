@@ -70,6 +70,3 @@ De applicatie gebruikt `cryptography.fernet` voor symmetrische encryptie. Dit be
 
 ### Decryptie
 De versleutelde tekst kan ontsleuteld worden door de originele sleutel te gebruiken. Zorg ervoor dat het bestand `secret.key` niet verloren gaat, want zonder deze sleutel kan de tekst niet ontsleuteld worden.
-
-## Contributie
-Voel je vrij om bij te dragen aan dit project door een pull request in te dienen.
