@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryptie App</title>
+</head>
+<body>
+    <h1>Encryptie/Decryptie App</h1>
+
+    <form action="/encrypt" method="POST">
+        <h2>Versleutelen</h2>
+        <textarea name="message" placeholder="Voer je tekst in om te versleutelen"></textarea>
+        <button type="submit">Versleutel</button>
+    </form>
+
+    <form action="/decrypt" method="POST">
+        <h2>Ontsleutelen</h2>
+        <textarea name="message" placeholder="Voer de versleutelde tekst in om te ontsleutelen"></textarea>
+        <button type="submit">Ontsleutel</button>
+    </form>
+
+    {% if result %}
+        <h3>Resultaat ({{ action }}):</h3>
+        <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
